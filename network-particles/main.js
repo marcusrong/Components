@@ -4,7 +4,7 @@ let ctx = canvas.getContext('2d');
 ctx.globalAlpha = 0.5;
 
 let circles = [];
-const circleCount = 50;
+const circleCount = 150;
 
 
 const radius = 3;
@@ -31,7 +31,7 @@ for (let i = 0; i < circleCount; i++) {
 }
 
 //draw circles
-
+/*
 function drawCircles() {
     for (let i = 0; i < circles.length; i++) {
         let circle = circles[i];
@@ -43,7 +43,7 @@ function drawCircles() {
         ctx.closePath();
     }
 }
-/*
+*/
 function drawCircles() {
     for (let i = 0; i < circles.length; i++) {
         let circle = circles[i];
@@ -67,7 +67,6 @@ function drawCircles() {
         ctx.closePath();
     }
 }
-*/
 drawCircles();
 
 //go over each circle and conncting a line beetween them
@@ -113,7 +112,7 @@ function connectCircles() {
 connectCircles();
 
 //move circles
-
+/*
 function moveCircles() {
     for (let i = 0; i < circles.length; i++) {
         let circle = circles[i];
@@ -128,8 +127,8 @@ function moveCircles() {
     }
 }
 moveCircles();
+*/
 
-/*
 function moveCircles() {
     for (let i = 0; i < circles.length; i++) {
         let circle = circles[i];
@@ -151,7 +150,7 @@ function moveCircles() {
         }
     }
 }
-*/
+
 //animate 
 function animate() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
